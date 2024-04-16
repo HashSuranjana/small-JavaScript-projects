@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Code Generator</title>
+
+    <link rel="stylesheet" href="barcode.css"> <!-- CSS File-->
+    
+
+    <script src="JsBarcode.all.min.js"></script>  <!-- Js file for Barcode-->
+    
+</head>
+<body>
+
+    <div class="container"> 
+
+        <h2 class="welcome-note">Welcome to Bar Code Generator</h2> <!-- Welcome Message-->
+    
+        <h4 class="welcome-para"> Enter lines in below text input box that you want to generate as a barcode.</h4> <!-- Welcome Paragraph-->
+    
+        <div class="box-container">
+            
+            <input type="text" class="txt-input" id="txt-input" placeholder="Enter your text" > <!-- Text input Box to enter message--> 
+            
+            <button class="btn-submit">  <!-- Button for Generate-->
+    
+                <span class="circle" aria-hidden="true">
+                    
+                    <span class="icon arrow"></span>
+                </span>
+
+                <span class="btn-submit-text" id="btn-submit-text">Generate</span>
+
+            </button>
+
+            <svg id="barcode"></svg>  <!-- SVG file for displaying Barcode-->
+    
+        </div>
+
+    </div>  
+    
+    <script src="barcode.js"></script>  <!-- Another Js file for Barcode-->
+    
+</body>
+
+</html>
