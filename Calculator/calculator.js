@@ -1,4 +1,5 @@
-let operation = 0 ;
+let operation ;
+let value_1;
 
 function fn0(){
     let value = document.getElementById('screen').innerHTML;
@@ -53,22 +54,42 @@ function fn9(){
 
 
 function fnAD(){
-    operation = 1;
+    value_1 = document.getElementById('screen').innerHTML ;
+    document.getElementById('screen').innerHTML = 0 ;
+    operation = "add";
 }
 
 function fnSB(){
-    operation = 2;
+    value_1 = document.getElementById('screen').innerHTML ;
+    document.getElementById('screen').innerHTML = 0 ;
+    operation = "subs";
 }
 
 function fnMP(){
-    operation = 3;
+    let value_1 = document.getElementById('screen').innerHTML ;
+    document.getElementById('screen').innerHTML = 0 ;
+    operation = "multiply";
 }
 
 function fnDV(){
-    operation = 4;
+    let value_1 = document.getElementById('screen').innerHTML ;
+    document.getElementById('screen').innerHTML = 0 ;
+    operation = "divide";
+}
+
+function fnC(){
+    let value = document.getElementById('screen').innerHTML;
+    let delvalue = value.slice(0 , -1);      // deleting a number from the end
+    document.getElementById('screen').innerHTML = delvalue ;
 }
 
 function fnEQ(){
-    operation = 5;  
+    let value_2 = document.getElementById('screen').innerHTML;
+
+    if (operation == "add"){
+        document.getElementById('screen').innerHTML = parseFloat(value_1) + parseFloat(value_2);
+    }
 }
+
+
 
