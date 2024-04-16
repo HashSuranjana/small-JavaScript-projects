@@ -53,6 +53,11 @@ function fn9(){
     document.getElementById('screen').innerHTML = value + 9 ;
 }
 
+function fndot(){
+    let value = document.getElementById('screen').innerHTML;
+    document.getElementById('screen').innerHTML = value + ".";
+}
+
 
 function fnAD(){
     value_1 = document.getElementById('screen').innerHTML ;
