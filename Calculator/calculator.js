@@ -1,4 +1,4 @@
-let operation ;
+let operation = "";
 let value_1;
 let value_2;
 
@@ -104,6 +104,7 @@ function fnEQ(){
 
 function fnAC(){
     value_1 = document.getElementById('screen').innerHTML = 0;
+    operation =""
     value_2 = document.getElementById('screen').innerHTML = 0 ;
 }
 
