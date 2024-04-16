@@ -1,7 +1,7 @@
-
+let operation = 0 ;
 
 function fn0(){
-    let value = document.getElementById('screen').innerHTML=0;
+    let value = document.getElementById('screen').innerHTML= 0;
 
 }
 
@@ -40,3 +40,25 @@ function fn8(){
 function fn9(){
     let value = document.getElementById('screen').innerHTML = 9;
 }
+
+
+function fnAD(){
+    operation = 1;
+}
+
+function fnSB(){
+    operation = 2;
+}
+
+function fnMP(){
+    operation = 3;
+}
+
+function fnDV(){
+    operation = 4;
+}
+
+function fnEQ(){
+    operation = 5;  
+}
+
