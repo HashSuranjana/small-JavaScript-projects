@@ -4,7 +4,7 @@ function ValidateNum() {
 
     if (number.length == 9 && number[0] == 7) {
         
-        document.getElementById('message').innerHTML = "+94" + number ;
+        document.getElementById('message').innerHTML = "+ 94" + number ;
     }
 
     else if (number.length == 10 && number[0]== 0) {
