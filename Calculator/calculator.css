@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+    color: #000;
+    text-decoration: none;
+}
+
+
+.cal-name{
+    
+    text-align: center;
+    font-weight: 800;
+    margin-top: 40px;
+    color: rgb(215, 132, 23);
+}
+
+.cal {
+
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: cornsilk;
+    margin: 50px auto;
+    border-radius: 15px;
+    border: 2px solid orange;
+    padding: 10px;
+}
+
+.display {
+    width: 590px;
+    height: 50px;
+    background-color: rgb(244, 187, 31);
+    border: 2px solid orange;
+    border-radius: 15px;
+}
+
+.screen {
+    margin: 10px;
+    width: 550px;
+    text-align: end;
+}

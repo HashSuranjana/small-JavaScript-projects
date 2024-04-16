@@ -104,7 +104,9 @@ function fnEQ(){
 
 function fnAC(){
     value_1 = document.getElementById('screen').innerHTML = 0;
+
     operation =""
+    
     value_2 = document.getElementById('screen').innerHTML = 0 ;
 }
 
