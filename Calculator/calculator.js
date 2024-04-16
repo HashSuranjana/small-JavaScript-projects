@@ -1,5 +1,6 @@
 let operation ;
 let value_1;
+let value_2;
 
 function fn0(){
     let value = document.getElementById('screen').innerHTML;
@@ -66,13 +67,13 @@ function fnSB(){
 }
 
 function fnMP(){
-    let value_1 = document.getElementById('screen').innerHTML ;
+    value_1 = document.getElementById('screen').innerHTML ;
     document.getElementById('screen').innerHTML = 0 ;
     operation = "multiply";
 }
 
 function fnDV(){
-    let value_1 = document.getElementById('screen').innerHTML ;
+    value_1 = document.getElementById('screen').innerHTML ;
     document.getElementById('screen').innerHTML = 0 ;
     operation = "divide";
 }
@@ -84,11 +85,26 @@ function fnC(){
 }
 
 function fnEQ(){
-    let value_2 = document.getElementById('screen').innerHTML;
+
+    value_2 = document.getElementById('screen').innerHTML;
 
     if (operation == "add"){
         document.getElementById('screen').innerHTML = parseFloat(value_1) + parseFloat(value_2);
     }
+    else if (operation == "subs"){
+        document.getElementById('screen').innerHTML = parseFloat(value_1) - parseFloat(value_2);
+    }
+    else if (operation == "multiply"){
+        document.getElementById('screen').innerHTML = parseFloat(value_1) * parseFloat(value_2);
+    }
+    else if (operation == "divide"){
+        document.getElementById('screen').innerHTML = parseFloat(value_1) / parseFloat(value_2);
+    }
+}
+
+function fnAC(){
+    value_1 = document.getElementById('screen').innerHTML = 0;
+    value_2 = document.getElementById('screen').innerHTML = 0 ;
 }
 
 
