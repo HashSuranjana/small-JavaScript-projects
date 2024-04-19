@@ -1,0 +1,30 @@
+body {
+    background-image: url(Images/bgImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.name-note {
+    text-align: center;
+    
+}
+
+.total {
+    font-size: larger;
+}
+
+button {
+
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-weight: bold;
+
+}
+
+img {
+    margin-left: 10px;
+    margin-top: 10px;
+}

@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Black Jack</title>
+    <link rel="stylesheet" href="BlackJack.css">
 </head>
 <body>
 
     <h2 class="name-note">Black Jack Game</h2>
 
-    <h4 id="total"></h4>
+    <h4 id="total" class="total"></h4>
+
+    <button id="generate-btn" onclick="GenCard()">Generate Card</button>
+    <button id="restart"  onclick="ReGenCard()"  style="visibility:hidden;" >Restart</button>
 
     <hr>
 
+    <h3 id="message" class="message"></h3>
 
-    <button id="generate-btn" onclick="GenCard()">Generate Card</button>
-    <button id="restart" onclick="ReGenCard()"  style="visibility:hidden;" >Restart</button>
-
-    <h3 id="message"></h3>
+    <h3 id="final-num"></h3>
 
     <script src="BlackJack.js"></script>
     
